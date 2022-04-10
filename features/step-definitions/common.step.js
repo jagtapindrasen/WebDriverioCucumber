@@ -19,7 +19,7 @@ Given(/^I am on the home page$/, async () => {
 
 });
 
-When(/^Navigate to SignUp page$/, async () => {
+When(/^Navigate to SignUp page$/, { wrapperOptions: { retry: 2 } }, async () => {
     await homePage.navigateToLoginPage();
     console.log("Navigated to Authentication page ");
   });
