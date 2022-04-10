@@ -112,8 +112,9 @@ class ProductPage {
 
       await btnSubCategory.click();
 
+      //await browser.pause(5000);
       //select product
-      this.txtProductTitle.forEach(async (value) => {
+      await this.txtProductTitle.forEach(async (value) => {
         const productName = await value.getText();
 
         if (productName === element.name) {
@@ -219,10 +220,16 @@ class ProductPage {
     // Navigate to Shipping page
     await this.btnContinueCheckout.click();
 
+    console.log("************** Shiping cha click cha adhi");
+
     await commonPage.vaerifyPageHeading("SHIPPING");
 
+    console.log("************** Shiping cha click cha adhi headline verified");
     // Validate pop up when not checked for Terms and Services
     await this.btnContinueCheckout.click();
+
+    console.log("************** Shiping cha click cha nanatarrrrr headline verified");
+
 
     await expect(await this.txt_ErrorModal.isDisplayed()).toBeTruthy();
 

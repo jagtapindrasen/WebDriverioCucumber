@@ -31,6 +31,7 @@ class ContactPage {
      global.SharedVariable.email
     );
 
+    await browser.pause(5000);
     await this.dropdownOrderReference.selectByIndex(1);
 
     await this.inputMessage.setValue(
