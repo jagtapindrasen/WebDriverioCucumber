@@ -132,7 +132,7 @@ class AuthPage {
       await this.btn_CreateAccount.click();
   
       const gender1 = await $("#uniform-id_gender1");
-      await gender1.waitForExist({ timeout: 15000 });
+      await gender1.waitForExist({ timeout: 55000 });
       await this.radio_Gender.click();
   
       await this.input_FirstName.setValue(address.firstName);
