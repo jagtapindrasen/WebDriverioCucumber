@@ -5,8 +5,10 @@ exports.config = {
   // Browserstack Config
   //   user: process.env.BROWSERSTACK_USERNAME,
   //   key: process.env.BROWSERSTACK_KEY,
-  user: "indrasenjagtap_F9PEVx",
-  key: "MhRhKKLW9FQnyLbAxx2K",
+  user: "indrasenjjagtap_3z25vf",
+  key: "Mqnqs7sHUUubrh3Y84dH",
+  // user: "indrasenjagtap_F9PEVx",
+  // key: "MhRhKKLW9FQnyLbAxx2K",
   //
   // ====================
   // Runner Configuration
